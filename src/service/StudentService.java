@@ -9,10 +9,10 @@ public class StudentService {
     //Create:adding a record
     public void addRecord(Student s) {
         FileUtil.appendFile(FN, s.toString());
-        System.out.println(s.getName() + "added");
+        System.out.println(s.getName() + " added");
     }
 
-    //Read:getting all records
+    //Read:displaying all records
     public List<Student> getAllRecords() {
         List<String> lists=FileUtil.readFile(FN);
         List<Student> l=new ArrayList<>();

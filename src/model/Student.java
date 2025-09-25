@@ -47,7 +47,7 @@ public class Student {
         return id+"|"+name+"|"+gender+"|"+course;
     }
 
-    public static Student fromString(String s) { //string input from the above method
+    public static Student fromString(String s) { //String to Student type
         String str[]=s.split("\\|");
         if(str.length==4) {
             int id=Integer.parseInt(str[0]);
